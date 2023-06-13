@@ -1,0 +1,175 @@
+/* ナビゲーションヘッダー全体のスタイル */
+body {
+  margin: 0;
+}
+
+header {
+  background-color: transparent;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#header {
+  float: left;
+  color: ghostwhite;
+  font-family: 'Kokoro Mincho', serif;
+}
+
+/* ナビゲーションメニューのスタイル */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+nav li {
+  float: right;
+  display: inline-block;
+}
+
+.logo img {
+  max-height: 50px; /* ロゴの適切な高さに調整してください */
+}
+
+nav li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+}
+
+.content {
+  margin-top: 0px; /* ナビゲーションヘッダーの高さと合わせて調整 */
+}
+
+.content img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 110%;
+  height: auto;
+  border-bottom-left-radius: 700px 40px;
+  border-bottom-right-radius: 700px 40px;
+}
+
+.button003 {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+
+.button003 a {
+  background: #eee;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 260px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.button003 a:hover {
+  background: #313131;
+  color: #fff;
+}
+
+.button003 a:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #313131;
+  border-right: 3px solid #313131;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.button003 a:hover:after {
+  border-color: #fff;
+}
+
+#body1 {
+  text-align: center;
+  font-family: "Kokoro Mincho", serif;
+  font-size: 35px;
+}
+
+p {
+  text-align: center;
+  font-family: "Kokoro Mincho", serif;
+  font-size: 18px;
+}
+
+.pagetop {
+  cursor: pointer;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.3s;
+  color: #00a6c4;
+  background: #fff;
+
+  /* デフォルトは非表示 */
+  opacity: 0;
+}
+
+.pagetop:hover {
+  box-shadow: 0 0 10px #00a6c4;
+}
+
+.quiz {
+  color: black;
+}
+
+/* デバイスサイズによるレスポンシブ対応 */
+@media only screen and (max-width: 600px) {
+  /* ナビゲーションヘッダーのスタイル修正 */
+  header {
+    padding: 5px;
+  }
+
+  nav ul {
+    margin-right: 10px;
+  }
+
+  nav li a {
+    padding: 10px 12px;
+  }
+
+  /* コンテンツのスタイル修正 */
+  .content img {
+    border-radius: 0;
+  }
+
+  #body1 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

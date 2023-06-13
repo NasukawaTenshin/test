@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>鹿児島検定四択クイズ</title>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+    <link rel="stylesheet" type="text/css" href="css/quiz.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="header">KAGOSHIMA</h1>
+      <nav>
+        <ul>
+          <li><a href="Inquiry.html">CONTACTS</a></li>
+          <li><a href="quiz.html">QUIZ</a></li>
+          <li><a href="word.html">WORD</a></li>
+          <li><a href="index.html">TOP</a></li>
+        </ul>
+      </nav>
+    
+    </header>
+    <div id="main-quiz">
+      <h1>鹿児島弁　四択クイズ</h1>
+      <div id="question"></div>
+      <div id="options"></div>
+      <p id="result"></p>
+    </div>
+    
+
+    <script src="js/quiz.js"></script>
+    <button onclick="nextQuestion()" id = "next">次の問題へ進む</button>
+    <div id="restartButton" style="display:none">
+      <button onclick="restartQuiz()">問題を解きなおす</button>
+    </div>
+    <div id="score"></div>
+
+</body>
+</html>
+
